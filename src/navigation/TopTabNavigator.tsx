@@ -4,11 +4,14 @@ import { View, Text } from 'react-native';
 import { topTabNavigatorStyles } from '../styles/topTabNavigatorStyles';
 import NewsScreen from '../screens/NewsScreen';
 import CombosScreen from '../screens/CombosScreen';
-import EntradasScreen from '../screens/EntradasScreen';
-import AcompanhamentosScreen from '../screens/AcompanhamentosScreen';
+import EntradasScreen from '../screens/StartersScreen';
+import AcompanhamentosScreen from '../screens/SidesScreen';
 import ExtrasScreen from '../screens/ExtrasScreen';
-import SobremesasScreen from '../screens/SobremesasScreen';
-import VinhosScreen from '../screens/VinhosScreen';
+import SobremesasScreen from '../screens/DessertsScreen';
+import StartersScreen from '../screens/StartersScreen';
+import SidesScreen from '../screens/SidesScreen';
+import DessertsScreen from '../screens/DessertsScreen';
+import WinesScreen from '../screens/WinesScreen';
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -108,13 +111,52 @@ const TopTabNavigator = () => {
           }}
         />
         <Tab.Screen 
-          name="Vinhos" 
-          component={VinhosScreen}
+          name="Starters" 
+          component={StartersScreen}
           options={{
             tabBarLabel: ({ focused }) => (
               <View style={topTabNavigatorStyles.labelContainer}>
                 <Text style={[topTabNavigatorStyles.label, { color: focused ? '#DA2727' : '#000' }]} numberOfLines={1}>
-                  Vinhos
+                  Starters
+                </Text>
+              </View>
+            ),
+          }}
+        />
+        <Tab.Screen 
+          name="Sides" 
+          component={SidesScreen}
+          options={{
+            tabBarLabel: ({ focused }) => (
+              <View style={topTabNavigatorStyles.labelContainer}>
+                <Text style={[topTabNavigatorStyles.label, { color: focused ? '#DA2727' : '#000' }]} numberOfLines={1}>
+                  Sides
+                </Text>
+              </View>
+            ),
+          }}
+        />
+        <Tab.Screen 
+          name="Desserts" 
+          component={DessertsScreen}
+          options={{
+            tabBarLabel: ({ focused }) => (
+              <View style={topTabNavigatorStyles.labelContainer}>
+                <Text style={[topTabNavigatorStyles.label, { color: focused ? '#DA2727' : '#000' }]} numberOfLines={1}>
+                  Desserts
+                </Text>
+              </View>
+            ),
+          }}
+        />
+        <Tab.Screen 
+          name="Wines" 
+          component={WinesScreen}
+          options={{
+            tabBarLabel: ({ focused }) => (
+              <View style={topTabNavigatorStyles.labelContainer}>
+                <Text style={[topTabNavigatorStyles.label, { color: focused ? '#DA2727' : '#000' }]} numberOfLines={1}>
+                  Wines
                 </Text>
               </View>
             ),

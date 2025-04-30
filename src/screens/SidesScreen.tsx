@@ -46,7 +46,7 @@ const acompanhamentosItems = [
   },
 ];
 
-const AcompanhamentosScreen = () => {
+const SidesScreen = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
@@ -77,4 +77,4 @@ const AcompanhamentosScreen = () => {
   );
 };
 
-export default AcompanhamentosScreen; 
+export default SidesScreen; 

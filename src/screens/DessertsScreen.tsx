@@ -38,7 +38,7 @@ const sobremesasItems = [
   },
 ];
 
-const SobremesasScreen = () => {
+const DessertsScreen = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
@@ -69,4 +69,4 @@ const SobremesasScreen = () => {
   );
 };
 
-export default SobremesasScreen; 
+export default DessertsScreen; 

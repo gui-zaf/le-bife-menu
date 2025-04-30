@@ -38,7 +38,7 @@ const vinhosItems = [
   },
 ];
 
-const VinhosScreen = () => {
+const WinesScreen = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
@@ -69,4 +69,4 @@ const VinhosScreen = () => {
   );
 };
 
-export default VinhosScreen; 
+export default WinesScreen; 

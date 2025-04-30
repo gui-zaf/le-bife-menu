@@ -30,7 +30,7 @@ const entradasItems = [
   },
 ];
 
-const EntradasScreen = () => {
+const StartersScreen = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
@@ -61,4 +61,4 @@ const EntradasScreen = () => {
   );
 };
 
-export default EntradasScreen; 
+export default StartersScreen; 
