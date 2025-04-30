@@ -30,6 +30,15 @@ export const foodItemStyles = StyleSheet.create({
     flex: 1,
     marginRight: 8,
   },
+  itemActions: {
+    flexDirection: 'row',
+    gap: 8,
+  },
+  actionButton: {
+    padding: 4,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   favoriteButton: {
     padding: 4,
     justifyContent: 'center',
